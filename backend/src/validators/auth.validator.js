@@ -1,0 +1,2 @@
+const Joi=require('joi');
+module.exports={signup:Joi.object({name:Joi.string().min(2).max(100).required(),email:Joi.string().email().required(),password:Joi.string().min(8).max(128).required()}),login:Joi.object({email:Joi.string().email().required(),password:Joi.string().required()}),changePassword:Joi.object({currentPassword:Joi.string().required(),newPassword:Joi.string().min(8).required()}),forgot:Joi.object({email:Joi.string().email().required()}),reset:Joi.object({token:Joi.string().required(),password:Joi.string().min(8).required()})};

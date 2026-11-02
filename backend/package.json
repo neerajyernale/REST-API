@@ -1,0 +1,24 @@
+{
+  "name": "angular-commerce-api",
+  "version": "1.0.0",
+  "description": "Secure product management REST API for Angular applications",
+  "main": "src/server.js",
+  "engines": { "node": "24.x" },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node src/server.js",
+    "seed:products": "node src/seeders/productSeeder.js",
+    "seed:accounts": "node src/seeders/accountSeeder.js",
+    "db:migrate": "node src/migrations/run.js",
+    "test": "node tests/run.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3", "cloudinary": "^2.5.1", "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5", "dotenv": "^16.4.5", "express": "^4.21.1",
+    "express-rate-limit": "^7.4.1",
+    "helmet": "7.2.0", "hpp": "^0.2.3", "joi": "^17.13.3",
+    "jsonwebtoken": "^9.0.2", "pg": "^8.16.3", "multer": "^2.5.0",
+    "xss": "^1.0.15"
+  },
+  "devDependencies": { "supertest": "^7.0.0" }
+}

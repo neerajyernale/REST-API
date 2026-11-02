@@ -1,0 +1,15 @@
+{
+  "name": "angular-commerce-workspace",
+  "version": "1.0.0",
+  "private": true,
+  "engines": { "node": "24.x" },
+  "workspaces": ["backend"],
+  "scripts": {
+    "start": "npm run start --workspace backend",
+    "dev": "npm run dev --workspace backend",
+    "test": "npm run test --workspace backend",
+    "seed:accounts": "npm run seed:accounts --workspace backend",
+    "seed:products": "npm run seed:products --workspace backend",
+    "db:migrate": "npm run db:migrate --workspace backend"
+  }
+}
